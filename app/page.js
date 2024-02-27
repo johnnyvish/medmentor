@@ -48,9 +48,15 @@ export default function Home() {
         <p className="text-xl md:text-2xl mt-8 text-gray-800 text-center w-[90%]">
           Seamless mentorship and milestone management for pre-med students.
         </p>
-        <button className="text-xl md:text-2xl pt-4 pb-4 pl-8 pr-8 bg-black text-white text-white rounded-2xl mt-8">
-          <Link href="/dashboard">Get Started</Link>
-        </button>
+        {isSignedIn ? (
+          <button className="text-xl md:text-2xl pt-4 pb-4 pl-8 pr-8 bg-black text-white text-white rounded-2xl mt-8">
+            <Link href="/dashboard">Get Started</Link>
+          </button>
+        ) : (
+          <button className="text-xl md:text-2xl pt-4 pb-4 pl-8 pr-8 bg-black text-white text-white rounded-2xl mt-8">
+            <Link href="/sign-up">Get Started</Link>
+          </button>
+        )}
       </div>
       <section className="flex justify-center items-center min-h-screen bg-white px-4 lg:px-8">
         <div className="flex flex-col justify-center items-center space-y-12 lg:space-y-16">
