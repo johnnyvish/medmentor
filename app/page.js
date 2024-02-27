@@ -23,28 +23,12 @@ export default function Home() {
             <Link href="/">Home</Link>
           </button>
           <button className="text-xl hover:text-blue-400">
-            <Link href="/contact">Contact</Link>
-          </button>
-          <button className="text-xl hover:text-blue-400">
             <Link href="/dashboard">Dashboard</Link>
           </button>
         </div>
         {isSignedIn ? (
           <div className="flex justify-end items-center space-x-4 w-[184px]">
             <UserButton />
-            <p className="md:hidden">
-              <svg
-                width="24"
-                height="30"
-                viewBox="0 0 40 30"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect width="40" height="5" fill="black" />
-                <rect y="12.5" width="40" height="5" fill="black" />
-                <rect y="25" width="40" height="5" fill="black" />
-              </svg>
-            </p>
           </div>
         ) : (
           <div className="hidden md:flex justify-center items-center space-x-4 w-[184px]">
@@ -64,7 +48,7 @@ export default function Home() {
         <p className="text-xl md:text-2xl mt-8 text-gray-800 text-center w-[90%]">
           Seamless mentorship and milestone management for pre-med students.
         </p>
-        <button className="text-xl md:text-2xl pt-4 pb-4 pl-8 pr-8 bg-black text-white text-white rounded-2xl mt-8 hover:bg-blue-400">
+        <button className="text-xl md:text-2xl pt-4 pb-4 pl-8 pr-8 bg-black text-white text-white rounded-2xl mt-8">
           <Link href="/dashboard">Get Started</Link>
         </button>
       </div>

@@ -22,9 +22,6 @@ export default function Dashboard() {
           <button className="text-xl hover:text-blue-400">
             <Link href="/">Home</Link>
           </button>
-          <button className="text-xl hover:text-blue-400">
-            <Link href="/contact">Contact</Link>
-          </button>
           <button className="text-xl hover:text-blue-400 underline">
             <Link href="/dashboard">Dashboard</Link>
           </button>
@@ -32,19 +29,6 @@ export default function Dashboard() {
         {isSignedIn ? (
           <div className="flex justify-end items-center space-x-4 w-[184px]">
             <UserButton />
-            <p className="md:hidden">
-              <svg
-                width="24"
-                height="30"
-                viewBox="0 0 40 30"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect width="40" height="5" fill="black" />
-                <rect y="12.5" width="40" height="5" fill="black" />
-                <rect y="25" width="40" height="5" fill="black" />
-              </svg>
-            </p>
           </div>
         ) : (
           <div className="hidden md:flex justify-center items-center space-x-4 w-[184px]">
