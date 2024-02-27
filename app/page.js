@@ -89,10 +89,11 @@ export default function Home() {
               <p className="text-lg lg:text-xl text-gray-800">
                 &quot;This platform intricately blends career goal
                 visualization, detailed requirement tracking, and actionable
-                meeting outcomes between mentors and mentees. It's designed to
-                guide students through their entire pre-med path, from initial
-                career planning to the application process, ensuring every step
-                is aligned with their ultimate goal of matriculation.&quot;
+                meeting outcomes between mentors and mentees. It&apos;s designed
+                to guide students through their entire pre-med path, from
+                initial career planning to the application process, ensuring
+                every step is aligned with their ultimate goal of
+                matriculation.&quot;
               </p>
               <p className="text-right text-xs md:text-sm text-gray-500 mt-4">
                 - Dr. Agyapong, Harvard Medical Doctor & Co-Founder
